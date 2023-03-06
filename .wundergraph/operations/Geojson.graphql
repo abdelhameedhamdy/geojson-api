@@ -1,0 +1,10 @@
+query {
+  geojson: geojson_getArcgisRestServicesWorldTimeZonesMapServer2QuerywhereOBJECTID4fgeojson {
+    type
+    features {
+      geometry {
+        coordinates
+      }
+    }
+  }
+}

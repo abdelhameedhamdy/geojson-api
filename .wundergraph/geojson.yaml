@@ -1,0 +1,63 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+  - url: https://sampleserver6.arcgisonline.com
+paths:
+  /arcgis/rest/services/WorldTimeZones/MapServer/2/query?where=OBJECTID=4&f=geojson/:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        200:
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - type
+                  - features
+                properties:
+                  type: string
+                  features:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - type
+                        - geometry
+                        - properties
+                      properties:
+                        type: string
+                        geometry:
+                          type: object
+                          required:
+                            - type
+                            - coordinates
+                          properties:
+                            type: string
+                            coordinates:
+                              type: array
+                              items:
+                                type: array
+                                items:
+                                  type: array
+                                  items:
+                                    type: array
+                                    items:
+                                      type: number
+                        properties:
+                          type: object
+                          required:
+                            - REGION
+                          properties:
+                            REGION:
+                              type: string
+      servers:
+        - url: https://sampleserver6.arcgisonline.com
+    servers:
+      - url: https://sampleserver6.arcgisonline.com
+components: {}
